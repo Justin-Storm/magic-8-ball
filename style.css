@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: #212529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ball {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #000;
+
+    .ball-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 185px;
+        width: 185px;
+        border-radius: 100%;
+        background: #fff;
+        position: relative;
+        left: 80px;
+        top: 50px;
+
+        .number {
+            font-family: 'Montserrat';
+            color: #000;
+            font-weight: bold;
+            font-size: 90px;
+        }
+    }
+}
+
+div.text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        color: #fff;
+        margin: 0;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .inputs {
+        display: flex;
+        gap: 5px; 
+
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-weight: bold;
+        }
+        input::placeholder {
+            color: #fff;
+        }
+    }
+
+    .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+            border: none;
+            padding: 7px 20px;
+            background: turquoise;
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: bold;
+        }
+    }
+}

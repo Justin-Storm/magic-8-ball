@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+<div class="ball">
+    <div class="ball-inner">
+        <div class="number">8</div>
+    </div>
+</div>
+
+<div class="text">
+    <p id="name"></p>
+    <p id="question"></p>
+    <p id="response"></p>
+</div>
+
+<form onsubmit="">
+    <div class="inputs">
+        <input type="text" placeholder="Name" id="inputname">
+        <input type="text" placeholder="Question*" id="inputquestion" required>
+    </div>
+    <div class="button">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+    
+</body>
+</html>
